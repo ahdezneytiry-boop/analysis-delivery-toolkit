@@ -149,7 +149,7 @@ def build(q):
     para(doc,'结果包还包含逐时段审计数据、逐日费用、时段映射、验证报告、求解最优性日志、参数验证表和可重跑代码。模型与代码逐项一致；未把可选场景树、K-medoids或天气模型写作已实现功能。')
     heading(doc,'11 局限与下一步改进边界')
     para(doc,'当前计划层的共同储能轨迹可能偏保守；执行层未来采用点预测而非完整多阶段场景树；线性库存价值只是跨日价值的近似；1月短验证集不覆盖全年季节；整点插值与输入区间语义仍依赖明确采样假设。以上局限应在论文中保留。下一步若扩展场景树，必须在相同历史节点共享储能及购电动作，再比较计算成本与样本外收益。')
-    para(doc,'本次“最优”指给定输入、已声明模型及数值容差下的各次优化最优，和候选参数在1月验证集上的最优；不等价于真实未来已知时的最低费用，不承诺竞赛奖项。')
+    para(doc,'本次“最优”指给定输入、已声明模型及数值容差下的各次优化最优，和候选参数在1月验证集上的最优；不等价于真实未来已知时的最低费用，不构成任何奖项承诺。')
     footer=sec.footer.paragraphs[0];footer.alignment=WD_ALIGN_PARAGRAPH.CENTER;fld=OxmlElement('w:fldSimple');fld.set(qn('w:instr'),'PAGE');footer._p.append(fld)
     out=m.ROOT/f'第{q}问建模文档_核验重算版.docx';doc.save(out);print(out,flush=True)
 

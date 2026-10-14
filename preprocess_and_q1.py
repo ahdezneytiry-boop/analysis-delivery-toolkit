@@ -19,7 +19,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-# ================= 学生必须检查/替换的本地路径 =================
+# ================= 使用前需检查/替换的本地路径 =================
 INPUT_DATA_DIR = Path(r'C:/Users/ahdezneytiry-boop1/Desktop/附件')  # 原始附件1~4.xlsx所在文件夹
 OUTPUT_DATA_DIR = HERE/'预处理数据'  # CSV、MAT、质量报告输出位置
 OUTPUT_RESULT_DIR = HERE/'第一问结果'  # 求解结果与高分辨率图片输出位置
